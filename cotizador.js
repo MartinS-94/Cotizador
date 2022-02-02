@@ -13,7 +13,6 @@ if (document.getElementById("uno").checked){
         alert("El cambio de Peso argentino a Dolar es: $" + resultado.toFixed(2));
         console.log("------Nueva cotizacion------")
         console.log("$" + valore + " es igual a " + "$" + resultado.toFixed(2) + " dolares oficiales.");
-        limpiar();
     }
 
     else if (document.getElementById("dos").checked){
@@ -54,8 +53,4 @@ if (document.getElementById("uno").checked){
     else {
         alert("Tienes que ingresar un monto en Pesos Argentinos para realizar la conversión");
     }
-}
-
-function limpiar(){
-    valore = ""
 }
