@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Divisas</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>Cotizacion de Pesos argentino en moneda Extranjera</h1>
+    <form class="formulario">
+        <p class="textosGuias"><strong>Seleccionar moneda</strong></p>
+        <input type="radio" name="cambio" id="uno"><span  class="monedas">Dolar</span>
+        <input type="radio" name="cambio" id="dos"><span  class="monedas">Dolar Blue</span>
+        <input type="radio" name="cambio" id="tres"><span  class="monedas">Euro</span>
+        <input type="radio" name="cambio" id="cuatro"><span  class="monedas">Real</span>
+        <input type="radio" name="cambio" id="cinco"><span  class="monedas">Peso Chileno</span>
+        <input type="radio" name="cambio" id="seis"><span  class="monedas">Sol</span>
+        <p class="textosGuias"><strong>Ingrese monto:</strong></p>
+        <input type="number" id="valor" min="1" max="1000000" required>
+        <input type="button" id="cotizador" value="Cotizar" onclick="convertir()">
+
+    </form>
+
+
+<script src="./cotizador.js"></script>
+</body>
+</html>
